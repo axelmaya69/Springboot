@@ -34,7 +34,7 @@ public class Rutas {
 
     @GetMapping("/userDataV3")
     public UserData getUserDataV3(){
-    return new UserData("mary",25);
+    return new UserData("mary",25,"alameda mx");
     }
 
 }
