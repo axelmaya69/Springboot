@@ -12,7 +12,7 @@ import java.util.Map;
 public class Rutas {
 
 
-    private static final Logger logger = LoggerFactory.getLogger(DemoApplication.class);
+    private static final Logger logger = LoggerFactory.getLogger(DemoApplication.class); //para los logs
 
     @GetMapping("/")
     String miPrimerRuta() {
