@@ -27,5 +27,5 @@ public class DemoApplication {
 	//@PostMapping insertar
 	//@PutMapping Editar
 	//@DeleteMapping Eliminar
-	
+	//Notaciones más importantes para hacer un CRUD
 }
