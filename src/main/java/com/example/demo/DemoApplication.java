@@ -27,4 +27,5 @@ public class DemoApplication {
 	}
 //Comando para ejecutar desde terminal despues de entrar a la carpeta "demo": ./gradlew bootRun
 	//@GetMapping obtener
+	//@PostMapping poner
 }
