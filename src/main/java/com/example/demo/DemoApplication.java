@@ -26,4 +26,5 @@ public class DemoApplication {
 	//@GetMapping obtener
 	//@PostMapping insertar
 	//@PutMapping Editar
+	//@DeleteMapping Eliminar
 }
