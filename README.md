@@ -9,3 +9,5 @@ ya que es un tema sumamente importante y muy usado en springboot
 Investigar mas a profundidad que son los servicios y como aplicarlos usando la interfaz JPA
 que se hizo en la practica de rest_api, posteriormente incluirle docker y JUNit que tambien es importante
 
+Desarrollar ahora si el proyecto de la tienda con todos los conceptos aprendidos 
+y desplegarlo en alguna plataforma
