@@ -11,3 +11,5 @@ que se hizo en la practica de rest_api, posteriormente incluirle docker y JUNit 
 
 Desarrollar ahora si el proyecto de la tienda con todos los conceptos aprendidos 
 y desplegarlo en alguna plataforma
+
+Aprender NoSQL (mongodb u otra)
