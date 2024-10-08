@@ -37,4 +37,8 @@ public class Rutas {
     return new UserData("mary",25,"alameda mx");
     }
 
+    @PostMapping("/order")
+    public String crearOrden(@RequestBody List<String> products){
+
+    }
 }
