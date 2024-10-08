@@ -7,4 +7,5 @@ También es demasiado o mucho muy importante entender conceptos como la inyeccio
 ya que es un tema sumamente importante y muy usado en springboot
 
 Investigar mas a profundidad que son los servicios y como aplicarlos usando la interfaz JPA
-que se hizo en la practica de rest_api, posteriormente incluirle docker
+que se hizo en la practica de rest_api, posteriormente incluirle docker y JUNit que tambien es importante
+
