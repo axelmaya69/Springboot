@@ -1,7 +1,9 @@
 package com.example.demo;
 
 import com.example.demo.models.Libro;
+import com.example.demo.models.Producto;
 import com.example.demo.models.UserData;
+import com.example.demo.services.OrderServices;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
@@ -9,12 +11,14 @@ import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.Map;
 
 
 @RestController
 public class Rutas {
 
+    private OrderServices OS = new OrderServices();
 
     private static final Logger logger = LoggerFactory.getLogger(DemoApplication.class);
 
@@ -28,7 +32,7 @@ public class Rutas {
    }
     //mejor forma de devolver jsons
    @GetMapping("/userDataV2")
-   public Map<String, Map <String,Object>> getUserDataV2(){
+   public Map<String, Map<String,Object>> getUserDataV2(){
         return Map.of("user", Map.of("name","Mary","age",25));
    }
 
@@ -38,7 +42,8 @@ public class Rutas {
     }
 
     @PostMapping("/order")
-    public String crearOrden(@RequestBody List<String> products){
-
+    public String crearOrden(@RequestBody List<Producto> products){
+    OS.saveOrder(products);
+       return "Guardado exitosamente";
     }
 }
