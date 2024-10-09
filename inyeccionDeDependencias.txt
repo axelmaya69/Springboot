@@ -1,1 +1,2 @@
-la inyeccion de dependencias consiste en crear objetos y pasarselos a otros objetos que dependen de ellos (en runtime)
+la inyeccion de dependencias consiste en crear objetos y pasarselos
+ a otros objetos que dependen de ellos (en runtime)
