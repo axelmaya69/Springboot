@@ -18,7 +18,12 @@ import java.util.Map;
 @RestController
 public class Rutas {
 
-    private OrderServices OS = new OrderServices();
+
+    private OrderServices OS;
+    //Asi se hace una inyeccion de dependencias
+    public Rutas(OrderServices OS ){
+    this.OS=OS;
+    }
 
     private static final Logger logger = LoggerFactory.getLogger(DemoApplication.class);
 
