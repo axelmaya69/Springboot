@@ -10,7 +10,7 @@ Investigar mas a profundidad que son los servicios y como aplicarlos usando la i
 que se hizo en la practica de rest_api, posteriormente incluirle docker y JUNit que tambien es importante
 
 Tambien investigar mas que son los beans, ya que no se entendio muy bien y quedan bastantes dudas respecto
-a este tema
+a este tema, investiando tambien el patron de diseño singleton
 
 
 Desarrollar ahora si el proyecto de la tienda con todos los conceptos aprendidos 
