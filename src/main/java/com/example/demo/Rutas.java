@@ -1,5 +1,6 @@
 package com.example.demo;
 
+import com.example.demo.OwnBean.MiBean;
 import com.example.demo.models.Libro;
 import com.example.demo.models.Producto;
 import com.example.demo.models.UserData;
@@ -20,9 +21,11 @@ public class Rutas {
 
 
     private OrderServices OS;
+    private MiBean miBean;
     //Asi se hace una inyeccion de dependencias
-    public Rutas(OrderServices OS ){
+    public Rutas(OrderServices OS, MiBean miBean){
     this.OS=OS;
+    this.miBean=miBean;
     }
 
     private static final Logger logger = LoggerFactory.getLogger(DemoApplication.class);
@@ -51,4 +54,11 @@ public class Rutas {
     OS.saveOrder(products);
        return "Guardado exitosamente";
     }
+
+    @GetMapping("/mibean")
+       public String salidarDesdeMiBean(){
+           miBean.saludar();
+           return "Completado";
+        }
+    
 }
