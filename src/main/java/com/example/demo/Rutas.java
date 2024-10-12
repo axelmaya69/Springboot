@@ -75,5 +75,9 @@ public class Rutas {
         miComponente.saludadDesdeComponente();
         return "Completado";
     }
+
+        //asi se ve el estado de una api, accediendo a ese endpoint
+    //(para mas ver video num 23)
+    //http://localhost:8080/actuator/health
     
 }
