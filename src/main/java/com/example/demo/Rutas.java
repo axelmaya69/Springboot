@@ -5,6 +5,7 @@ import com.example.demo.OwnBean.MiComponente;
 import com.example.demo.models.Libro;
 import com.example.demo.models.Producto;
 import com.example.demo.models.UserData;
+import com.example.demo.services.IOrderService;
 import com.example.demo.services.OrderServices;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -22,7 +23,7 @@ import java.util.Map;
 public class Rutas {
 
 
-    private OrderServices OS;
+    private IOrderService OS;
     private MiBean miBean;
     private MiComponente miComponente;
 
@@ -30,7 +31,7 @@ public class Rutas {
     //mas comun y usada la inyeccion por constructor
     //@Autowired
     //Asi se hace una inyeccion de dependencias
-    public Rutas(OrderServices OS, MiBean miBean, MiComponente miComponente){
+    public Rutas(IOrderService OS, MiBean miBean, MiComponente miComponente){
     this.OS=OS;
     this.miBean=miBean;
     this.miComponente=miComponente;
